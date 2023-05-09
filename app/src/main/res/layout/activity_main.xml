@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/AmountText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/amount" />
+
+    <EditText
+        android:id="@+id/Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/PaxText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pax" />
+
+    <EditText
+        android:id="@+id/PaxNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/ServiceCharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ToggleButton"
+            android:textOff="no svs"
+            android:textOn="svs"/>
+
+        <ToggleButton
+            android:id="@+id/GST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ToggleButton"
+            android:textOff="no gst"
+            android:textOn="gst"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/DiscountTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/discount"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/Discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Cash" />
+
+        <RadioButton
+            android:id="@+id/PayNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="PayNow" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Split"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SPLIT" />
+
+        <Button
+            android:id="@+id/Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RESET" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TotalBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/EachCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+</LinearLayout>
